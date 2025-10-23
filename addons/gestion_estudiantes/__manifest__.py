@@ -5,7 +5,7 @@
     'author': 'Cris',
     'category': 'Education',
     'depends': ['base'],
-    'data': [],#'views/estudiante_view.xml'],
+    'data': [],
     'installable': True,
     'application': True,
 }
