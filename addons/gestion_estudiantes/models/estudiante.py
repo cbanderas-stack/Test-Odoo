@@ -21,3 +21,4 @@ class Estudiante(models.Model):
 
 # id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 # access_estudiante_user,access.estudiante.user,model_gestion_estudiantes_estudiante,base.group_user,1,1,1,1
+# Hola
