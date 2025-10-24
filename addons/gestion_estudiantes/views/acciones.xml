@@ -1,0 +1,9 @@
+<odoo>
+    <!-- Acción para estudiantes -->
+    <record id="action_estudiante" model="ir.actions.act_window">
+        <field name="name">Estudiantes</field>
+        <field name="res_model">gestion_estudiantes.estudiante</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
+

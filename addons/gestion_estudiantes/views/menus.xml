@@ -1,0 +1,15 @@
+<odoo>
+    <!-- Menú Raíz -->
+    <menuitem id="menu_root_estudiantes" 
+              name="Gestión de Estudiantes"
+              action="action_estudiante" 
+              sequence="1"
+              groups="base.group_user"/>
+
+    <!-- Submenú -->
+    <menuitem id="menu_estudiantes" 
+              name="Estudiantes" 
+              parent="menu_root_estudiantes" 
+              action="action_estudiante" 
+              sequence="1"/>
+</odoo>

@@ -4,8 +4,14 @@
     'summary': 'Módulo para gestionar estudiantes en Odoo',
     'author': 'Cris',
     'category': 'Education',
-    'depends': ['base'],
-    'data': [],
+    'depends': ['base', 'contacts'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/estudiante_views.xml',
+        #'views/profesor_views.xml',
+        'views/acciones.xml',
+        'views/menus.xml',
+    ],
     'installable': True,
     'application': True,
 }

@@ -1,0 +1,44 @@
+<odoo>
+    <record id="view_estudiante_form" model="ir.ui.view">
+        <field name="name">gestion.estudiantes.form</field>
+        <field name="model">gestion_estudiantes.estudiante</field>
+        <field name="arch" type="xml">
+            <form string="Estudiante">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                            <field name="grade"/>
+                            <field name="email"/>
+                            <field name="phone"/>
+                        </group>
+                        <group>
+                            <field name="enrollment_date"/>
+                            <field name="address"/>
+                            <field name="active"/>
+                            <field name="photo" widget="image"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+<!--Listado-->
+    <record id="view_estudiante_tree" model="ir.ui.view">
+        <field name="name">gestion.estudiantes.tree</field>
+        <field name="model">gestion_estudiantes.estudiante</field>
+        <field name="arch" type="xml">
+            <tree string="Estudiantes">
+                <field name="name"/>
+                <field name="age"/>
+                <field name="grade"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="enrollment_date"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
