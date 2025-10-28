@@ -12,8 +12,9 @@
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[('is_teacher','=',True)]</field>
-        <field name="views" eval="[(ref('view_teacher_tree'), 'tree'),
-        (ref('view_partner_form_inherit_profesor'), 'form')]"/>
+        <field name="views" eval="[
+        (ref('gestion_estudiantes.view_teacher_tree'), 'tree'),
+        (ref('gestion_estudiantes.view_partner_form_inherit_profesor'), 'form')]"/>
 
     </record>
 </odoo>

@@ -6695,3 +6695,615 @@ psycopg2.errors.SerializationFailure: could not serialize access due to concurre
 2025-10-28 15:37:16,542 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.124245069784640, stopped 124245069784640)> (False) 
 2025-10-28 15:37:16,543 1 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
 2025-10-28 15:37:16,544 1 DEBUG ? odoo.service.server: -- 
+2025-10-28 15:37:18,012 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-10-28 15:37:18,013 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-10-28 15:37:18,013 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 15:37:18,014 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-10-28 15:37:18,014 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-10-28 15:37:18,014 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 15:37:18,021 1 INFO ? odoo: Odoo version 17.0-20251008 
+2025-10-28 15:37:18,022 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-10-28 15:37:18,023 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2025-10-28 15:37:18,023 1 INFO ? odoo: database: odoo@db:5432 
+2025-10-28 15:37:18,096 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-10-28 15:37:18,239 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-10-28 15:37:18,242 1 DEBUG ? odoo.service.server: cron0 started! 
+2025-10-28 15:37:18,242 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 45bad5948ee2:8069 
+2025-10-28 15:37:18,243 1 DEBUG ? odoo.service.server: cron1 started! 
+2025-10-28 15:37:18,493 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2025-10-28 15:37:18,542 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 2] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2025-10-28 15:37:18,555 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-10-28 15:37:18,556 1 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-10-28 15:37:18,562 1 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,563 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-10-28 15:37:18,602 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'gestion_estudiantes', defaulting to LGPL-3 
+2025-10-28 15:37:18,645 1 DEBUG ? odoo.modules.loading: Updating graph with 24 more modules 
+2025-10-28 15:37:18,645 1 INFO ? odoo.modules.loading: loading 25 modules... 
+2025-10-28 15:37:18,646 1 DEBUG ? odoo.modules.loading: Loading module web (2/25) 
+2025-10-28 15:37:18,648 1 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,648 1 DEBUG ? odoo.modules.loading: Loading module auth_totp (3/25) 
+2025-10-28 15:37:18,655 1 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,655 1 DEBUG ? odoo.modules.loading: Loading module base_import (4/25) 
+2025-10-28 15:37:18,669 1 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,670 1 DEBUG ? odoo.modules.loading: Loading module base_import_module (5/25) 
+2025-10-28 15:37:18,673 1 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,674 1 DEBUG ? odoo.modules.loading: Loading module base_setup (6/25) 
+2025-10-28 15:37:18,676 1 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,677 1 DEBUG ? odoo.modules.loading: Loading module bus (7/25) 
+2025-10-28 15:37:18,685 1 DEBUG ? odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,686 1 DEBUG ? odoo.modules.loading: Loading module web_tour (8/25) 
+2025-10-28 15:37:18,687 1 DEBUG ? odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,688 1 DEBUG ? odoo.modules.loading: Loading module iap (9/25) 
+2025-10-28 15:37:18,691 1 DEBUG ? odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,691 1 DEBUG ? odoo.modules.loading: Loading module mail (10/25) 
+2025-10-28 15:37:18,744 1 DEBUG ? odoo.modules.loading: Module mail loaded in 0.05s, 0 queries 
+2025-10-28 15:37:18,745 1 DEBUG ? odoo.modules.loading: Loading module web_editor (11/25) 
+2025-10-28 15:37:18,757 1 DEBUG ? odoo.modules.loading: Module web_editor loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,758 1 DEBUG ? odoo.modules.loading: Loading module auth_signup (12/25) 
+2025-10-28 15:37:18,761 1 DEBUG ? odoo.modules.loading: Module auth_signup loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,762 1 DEBUG ? odoo.modules.loading: Loading module auth_totp_mail (13/25) 
+2025-10-28 15:37:18,763 1 DEBUG ? odoo.modules.loading: Module auth_totp_mail loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,764 1 DEBUG ? odoo.modules.loading: Loading module base_install_request (14/25) 
+2025-10-28 15:37:18,766 1 DEBUG ? odoo.modules.loading: Module base_install_request loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,767 1 DEBUG ? odoo.modules.loading: Loading module contacts (15/25) 
+2025-10-28 15:37:18,768 1 DEBUG ? odoo.modules.loading: Module contacts loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,769 1 DEBUG ? odoo.modules.loading: Loading module google_gmail (16/25) 
+2025-10-28 15:37:18,771 1 DEBUG ? odoo.modules.loading: Module google_gmail loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,772 1 DEBUG ? odoo.modules.loading: Loading module iap_mail (17/25) 
+2025-10-28 15:37:18,773 1 DEBUG ? odoo.modules.loading: Module iap_mail loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,774 1 DEBUG ? odoo.modules.loading: Loading module mail_bot (18/25) 
+2025-10-28 15:37:18,776 1 DEBUG ? odoo.modules.loading: Module mail_bot loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,776 1 DEBUG ? odoo.modules.loading: Loading module phone_validation (19/25) 
+2025-10-28 15:37:18,803 1 DEBUG ? odoo.modules.loading: Module phone_validation loaded in 0.03s, 0 queries 
+2025-10-28 15:37:18,804 1 DEBUG ? odoo.modules.loading: Loading module privacy_lookup (20/25) 
+2025-10-28 15:37:18,808 1 DEBUG ? odoo.modules.loading: Module privacy_lookup loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,809 1 DEBUG ? odoo.modules.loading: Loading module web_unsplash (21/25) 
+2025-10-28 15:37:18,812 1 DEBUG ? odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,813 1 DEBUG ? odoo.modules.loading: Loading module gestion_estudiantes (22/25) 
+2025-10-28 15:37:18,895 1 DEBUG ? odoo.modules.loading: Module gestion_estudiantes loaded in 0.08s, 0 queries 
+2025-10-28 15:37:18,896 1 DEBUG ? odoo.modules.loading: Loading module partner_autocomplete (23/25) 
+2025-10-28 15:37:18,899 1 DEBUG ? odoo.modules.loading: Module partner_autocomplete loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,900 1 DEBUG ? odoo.modules.loading: Loading module sms (24/25) 
+2025-10-28 15:37:18,910 1 DEBUG ? odoo.modules.loading: Module sms loaded in 0.01s, 0 queries 
+2025-10-28 15:37:18,911 1 DEBUG ? odoo.modules.loading: Loading module snailmail (25/25) 
+2025-10-28 15:37:18,916 1 DEBUG ? odoo.modules.loading: Module snailmail loaded in 0.00s, 0 queries 
+2025-10-28 15:37:18,916 1 INFO ? odoo.modules.loading: 25 modules loaded in 0.27s, 0 queries (+0 extra) 
+2025-10-28 15:37:18,967 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-10-28 15:37:18,974 1 INFO ? odoo.modules.registry: Registry loaded in 0.473s 
+2025-10-28 15:37:19,000 1 INFO TEST odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-10-28 15:37:19,024 1 INFO TEST odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-10-28 15:37:19,156 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:19] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 6 0.036 0.155
+2025-10-28 15:37:19,162 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:19] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.069 0.607
+2025-10-28 15:37:19,529 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-10-28 15:37:22,927 1 WARNING TEST odoo.modules.module: Missing `license` key in manifest for 'gestion_estudiantes', defaulting to LGPL-3 
+2025-10-28 15:37:23,124 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:23] "GET /web HTTP/1.1" 200 - 64 0.059 0.585
+2025-10-28 15:37:23,221 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:23] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.007 0.012
+2025-10-28 15:37:23,274 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:23] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.008 0.023
+2025-10-28 15:37:23,327 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:23] "POST /mail/init_messaging HTTP/1.1" 200 - 56 0.081 0.038
+2025-10-28 15:37:23,360 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:23] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.016 0.010
+2025-10-28 15:37:24,078 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 15:37:24,078 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 15:37:24,422 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 15:37:24,423 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 15:37:24,501 1 DEBUG TEST odoo.api: call res.users().systray_get_activities() 
+2025-10-28 15:37:24,510 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:24] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.007 1.276
+2025-10-28 15:37:24,521 1 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'document'"  
+2025-10-28 15:37:24,521 1 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'Create new %(document)s'"  
+2025-10-28 15:37:24,522 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:24] "POST /web/action/load HTTP/1.1" 200 - 8 0.017 1.306
+2025-10-28 15:37:24,543 1 DEBUG TEST odoo.api: call res.partner().get_views(options={'action_id': 161, 'load_filters': True, 'toolbar': True}, views=[[False, 'list'], [False, 'form'], [False, 'search']]) 
+2025-10-28 15:37:24,607 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:24] "POST /web/dataset/call_kw/res.partner/get_views HTTP/1.1" 200 - 51 0.031 0.042
+2025-10-28 15:37:24,628 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'display_name': {}, 'complete_name': {}, 'function': {}, 'phone': {}, 'mobile': {}, 'email': {}, 'user_id': {'fields': {'display_name': {}}}, 'activity_ids': {'fields': {}}, 'activity_exception_decoration': {}, 'activity_exception_icon': {}, 'activity_state': {}, 'activity_summary': {}, 'activity_type_icon': {}, 'activity_type_id': {'fields': {'display_name': {}}}, 'city': {}, 'state_id': {'fields': {'display_name': {}}}, 'country_id': {'fields': {'display_name': {}}}, 'vat': {}, 'category_id': {'fields': {'display_name': {}, 'color': {}}}, 'is_company': {}, 'parent_id': {'fields': {}}, 'active': {}}) 
+2025-10-28 15:37:24,628 1 DEBUG TEST odoo.api: call res.users().has_group('base.group_allow_export') 
+2025-10-28 15:37:24,632 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:24] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.009
+2025-10-28 15:37:24,646 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:24] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 9 0.013 0.014
+2025-10-28 15:37:25,033 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:25] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.012
+2025-10-28 15:37:30,590 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'display_name': {}, 'complete_name': {}, 'function': {}, 'phone': {}, 'mobile': {}, 'email': {}, 'user_id': {'fields': {'display_name': {}}}, 'activity_ids': {'fields': {}}, 'activity_exception_decoration': {}, 'activity_exception_icon': {}, 'activity_state': {}, 'activity_summary': {}, 'activity_type_icon': {}, 'activity_type_id': {'fields': {'display_name': {}}}, 'city': {}, 'state_id': {'fields': {'display_name': {}}}, 'country_id': {'fields': {'display_name': {}}}, 'vat': {}, 'category_id': {'fields': {'display_name': {}, 'color': {}}}, 'is_company': {}, 'parent_id': {'fields': {}}, 'active': {}}) 
+2025-10-28 15:37:30,597 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:30] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 8 0.003 0.014
+2025-10-28 15:37:32,055 1 DEBUG TEST odoo.api: call res.partner().onchange({}, [], {'same_vat_partner_id': {'fields': {'display_name': {}}, 'context': {'show_address': False, 'show_vat': False}}, 'partner_gid': {}, 'additional_info': {}, 'same_company_registry_partner_id': {'fields': {'display_name': {}}, 'context': {'show_address': False, 'show_vat': False}}, 'avatar_128': {}, 'image_1920': {}, 'write_date': {}, 'is_company': {}, 'commercial_partner_id': {'fields': {}}, 'active': {}, 'company_id': {'fields': {}}, 'country_code': {}, 'company_type': {}, 'name': {}, 'parent_id': {'fields': {'display_name': {}}, 'context': {'default_is_company': True, 'show_vat': True}}, 'company_name': {}, 'type': {}, 'street': {}, 'street2': {}, 'city': {}, 'state_id': {'fields': {'display_name': {}}}, 'zip': {}, 'country_id': {'fields': {'display_name': {}}}, 'vat': {}, 'function': {}, 'phone_blacklisted': {}, 'mobile_blacklisted': {}, 'phone': {}, 'mobile': {}, 'phone_sanitized': {}, 'user_ids': {'fields': {}}, 'is_blacklisted': {}, 'email': {}, 'is_teacher': {}, 'website': {}, 'title': {'fields': {'display_name': {}}}, 'active_lang_count': {}, 'lang': {}, 'category_id': {'fields': {'display_name': {}, 'color': {}}}, 'child_ids': {'fields': {'id': {}, 'color': {}, 'name': {}, 'title': {'fields': {'display_name': {}}}, 'type': {}, 'email': {}, 'parent_id': {'fields': {'display_name': {}}}, 'is_company': {}, 'function': {}, 'phone': {}, 'street': {}, 'street2': {}, 'zip': {}, 'city': {}, 'country_id': {'fields': {'display_name': {}}}, 'mobile': {}, 'state_id': {'fields': {'display_name': {}}}, 'image_128': {}, 'avatar_128': {}, 'lang': {}, 'comment': {}, 'display_name': {}, 'write_date': {}, 'company_id': {'fields': {}}, 'user_id': {'fields': {}}}, 'limit': 40, 'order': '', 'context': {'default_type': 'other'}}, 'user_id': {'fields': {'display_name': {}}}, 'company_registry': {}, 'ref': {}, 'industry_id': {'fields': {'display_name': {}}}, 'comment': {}, 'display_name': {}}) 
+2025-10-28 15:37:32,072 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:32] "POST /web/dataset/call_kw/res.partner/onchange HTTP/1.1" 200 - 5 0.010 0.017
+2025-10-28 15:37:36,626 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'display_name': {}, 'complete_name': {}, 'function': {}, 'phone': {}, 'mobile': {}, 'email': {}, 'user_id': {'fields': {'display_name': {}}}, 'activity_ids': {'fields': {}}, 'activity_exception_decoration': {}, 'activity_exception_icon': {}, 'activity_state': {}, 'activity_summary': {}, 'activity_type_icon': {}, 'activity_type_id': {'fields': {'display_name': {}}}, 'city': {}, 'state_id': {'fields': {'display_name': {}}}, 'country_id': {'fields': {'display_name': {}}}, 'vat': {}, 'category_id': {'fields': {'display_name': {}, 'color': {}}}, 'is_company': {}, 'parent_id': {'fields': {}}, 'active': {}}) 
+2025-10-28 15:37:36,635 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 15:37:36] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 8 0.003 0.017
+2025-10-28 15:38:18,328 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:38:18,337 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 1 acquired 
+2025-10-28 15:38:18,375 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Base: Auto-vacuum internal data', 34) 
+2025-10-28 15:38:18,376 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-10-28 15:38:18,385 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling wizard.ir.model.menu.create()._transient_vacuum() 
+2025-10-28 15:38:18,390 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling reset.view.arch.wizard()._transient_vacuum() 
+2025-10-28 15:38:18,397 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.attachment()._gc_file_store() 
+2025-10-28 15:38:18,904 1 INFO TEST odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-10-28 15:38:18,905 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.cron.trigger()._gc_cron_triggers() 
+2025-10-28 15:38:18,919 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.http()._gc_sessions() 
+2025-10-28 15:38:19,004 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo()._transient_vacuum() 
+2025-10-28 15:38:19,007 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure()._transient_vacuum() 
+2025-10-28 15:38:19,010 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,013 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.profile()._gc_profile() 
+2025-10-28 15:38:19,016 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.enable.profiling.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,024 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config()._transient_vacuum() 
+2025-10-28 15:38:19,027 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config.installer()._transient_vacuum() 
+2025-10-28 15:38:19,030 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config.settings()._transient_vacuum() 
+2025-10-28 15:38:19,034 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.log()._gc_user_logs() 
+2025-10-28 15:38:19,036 1 INFO TEST odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-10-28 15:38:19,038 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.identitycheck()._transient_vacuum() 
+2025-10-28 15:38:19,041 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,044 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.user()._transient_vacuum() 
+2025-10-28 15:38:19,046 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.own()._transient_vacuum() 
+2025-10-28 15:38:19,049 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.apikeys.description()._transient_vacuum() 
+2025-10-28 15:38:19,053 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.update()._transient_vacuum() 
+2025-10-28 15:38:19,056 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.install()._transient_vacuum() 
+2025-10-28 15:38:19,059 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.import()._transient_vacuum() 
+2025-10-28 15:38:19,062 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.upgrade()._transient_vacuum() 
+2025-10-28 15:38:19,064 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.uninstall()._transient_vacuum() 
+2025-10-28 15:38:19,066 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.export()._transient_vacuum() 
+2025-10-28 15:38:19,069 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.line()._transient_vacuum() 
+2025-10-28 15:38:19,071 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.automatic.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,074 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.document.layout()._transient_vacuum() 
+2025-10-28 15:38:19,076 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling auth_totp.device()._gc_device() 
+2025-10-28 15:38:19,079 1 INFO TEST odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-10-28 15:38:19,080 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling auth_totp.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,083 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base_import.import()._transient_vacuum() 
+2025-10-28 15:38:19,085 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.import.module()._transient_vacuum() 
+2025-10-28 15:38:19,088 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling bus.bus()._gc_messages() 
+2025-10-28 15:38:19,096 1 INFO TEST odoo.models.unlink: User #1 deleted bus.bus records with IDs: [271, 272, 273] 
+2025-10-28 15:38:19,101 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling bus.presence()._gc_bus_presence() 
+2025-10-28 15:38:19,104 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling iap.account.info()._transient_vacuum() 
+2025-10-28 15:38:19,113 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.activity()._gc_delete_old_overdue_activities() 
+2025-10-28 15:38:19,120 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.message.translation()._gc_translations() 
+2025-10-28 15:38:19,128 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling discuss.channel.rtc.session()._gc_inactive_sessions() 
+2025-10-28 15:38:19,131 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.blacklist.remove()._transient_vacuum() 
+2025-10-28 15:38:19,134 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.compose.message()._gc_lost_attachments() 
+2025-10-28 15:38:19,135 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.compose.message()._transient_vacuum() 
+2025-10-28 15:38:19,138 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.activity.schedule()._transient_vacuum() 
+2025-10-28 15:38:19,141 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.resend.message()._transient_vacuum() 
+2025-10-28 15:38:19,143 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.resend.partner()._transient_vacuum() 
+2025-10-28 15:38:19,145 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.template.preview()._transient_vacuum() 
+2025-10-28 15:38:19,148 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.template.reset()._transient_vacuum() 
+2025-10-28 15:38:19,150 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.wizard.invite()._transient_vacuum() 
+2025-10-28 15:38:19,154 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.install.request()._transient_vacuum() 
+2025-10-28 15:38:19,157 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.install.review()._transient_vacuum() 
+2025-10-28 15:38:19,161 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling phone.blacklist.remove()._transient_vacuum() 
+2025-10-28 15:38:19,164 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling privacy.lookup.wizard()._transient_vacuum() 
+2025-10-28 15:38:19,167 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling privacy.lookup.wizard.line()._transient_vacuum() 
+2025-10-28 15:38:19,171 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.sms()._gc_device() 
+2025-10-28 15:38:19,174 1 INFO TEST odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-10-28 15:38:19,175 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.composer()._transient_vacuum() 
+2025-10-28 15:38:19,179 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.resend.recipient()._transient_vacuum() 
+2025-10-28 15:38:19,181 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.resend()._transient_vacuum() 
+2025-10-28 15:38:19,184 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.template.preview()._transient_vacuum() 
+2025-10-28 15:38:19,187 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.template.reset()._transient_vacuum() 
+2025-10-28 15:38:19,190 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling snailmail.letter.format.error()._transient_vacuum() 
+2025-10-28 15:38:19,192 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling snailmail.letter.missing.required.fields()._transient_vacuum() 
+2025-10-28 15:38:19,195 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.819s). 
+2025-10-28 15:38:19,195 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.819s (cron Base: Auto-vacuum internal data, server action 34 with uid 1) 
+2025-10-28 15:38:19,198 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 1 updated and released 
+2025-10-28 15:38:19,364 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:39:19,257 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:39:20,436 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:40:19,321 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:40:21,508 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:41:19,381 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:41:22,580 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:42:19,442 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:42:23,651 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:43:19,503 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:43:24,723 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:44:19,564 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:44:25,738 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:45:19,625 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:45:26,810 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:46:19,688 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:46:27,880 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:47:19,749 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:47:28,952 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:48:19,809 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:48:30,023 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:49:19,871 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:49:31,094 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:50:19,932 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:50:32,166 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:51:19,994 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:51:33,237 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:52:20,054 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:52:34,309 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:53:20,115 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:53:35,381 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:54:20,176 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:54:36,453 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:55:20,237 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:55:37,524 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:56:20,297 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:56:38,595 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:57:20,357 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:57:39,667 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:58:20,418 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:58:40,739 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 15:59:20,478 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 15:59:41,811 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:00:20,539 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:00:42,883 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:01:20,600 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:01:43,954 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:02:20,661 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:02:45,025 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:03:20,721 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:03:46,097 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:04:20,783 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:04:47,168 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:05:20,844 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:05:32,568 52 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-10-28 16:05:32,569 52 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-10-28 16:05:32,569 52 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 16:05:32,570 52 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-10-28 16:05:32,570 52 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-10-28 16:05:32,570 52 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 16:05:32,575 52 INFO ? odoo: Odoo version 17.0-20251008 
+2025-10-28 16:05:32,575 52 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-10-28 16:05:32,575 52 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2025-10-28 16:05:32,576 52 INFO ? odoo: database: odoo@db:5432 
+2025-10-28 16:05:32,699 52 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-10-28 16:05:32,929 52 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-10-28 16:05:32,976 52 DEBUG TEST odoo.modules.registry: Multiprocess load registry signaling: [Registry: 2] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2025-10-28 16:05:32,991 52 INFO TEST odoo.modules.loading: loading 1 modules... 
+2025-10-28 16:05:32,992 52 DEBUG TEST odoo.modules.loading: Loading module base (1/1) 
+2025-10-28 16:05:32,997 52 DEBUG TEST odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-10-28 16:05:32,997 52 INFO TEST odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-10-28 16:05:33,015 52 INFO TEST odoo.modules.loading: updating modules list 
+2025-10-28 16:05:33,019 52 INFO TEST odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-10-28 16:05:33,335 52 WARNING TEST odoo.modules.module: Missing `license` key in manifest for 'gestion_estudiantes', defaulting to LGPL-3 
+2025-10-28 16:05:35,258 52 INFO TEST odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['Gestión de Estudiantes'] to user __system__ #1 via n/a 
+2025-10-28 16:05:35,259 52 INFO TEST odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['Gestión de Estudiantes'] to user __system__ #1 via n/a 
+2025-10-28 16:05:35,763 52 INFO TEST odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2025-10-28 16:05:35,782 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'Install'"  
+2025-10-28 16:05:35,783 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'Apply Schedule Upgrade'"  
+2025-10-28 16:05:35,793 52 DEBUG TEST odoo.modules.loading: Updating graph with 24 more modules 
+2025-10-28 16:05:35,800 52 INFO TEST odoo.modules.loading: loading 25 modules... 
+2025-10-28 16:05:35,800 52 DEBUG TEST odoo.modules.loading: Loading module web (2/25) 
+2025-10-28 16:05:35,802 52 DEBUG TEST odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-10-28 16:05:35,803 52 DEBUG TEST odoo.modules.loading: Loading module auth_totp (3/25) 
+2025-10-28 16:05:35,817 52 DEBUG TEST odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2025-10-28 16:05:35,817 52 DEBUG TEST odoo.modules.loading: Loading module base_import (4/25) 
+2025-10-28 16:05:35,840 52 DEBUG TEST odoo.modules.loading: Module base_import loaded in 0.02s, 0 queries 
+2025-10-28 16:05:35,841 52 DEBUG TEST odoo.modules.loading: Loading module base_import_module (5/25) 
+2025-10-28 16:05:35,847 52 DEBUG TEST odoo.modules.loading: Module base_import_module loaded in 0.01s, 0 queries 
+2025-10-28 16:05:35,848 52 DEBUG TEST odoo.modules.loading: Loading module base_setup (6/25) 
+2025-10-28 16:05:35,852 52 DEBUG TEST odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-10-28 16:05:35,852 52 DEBUG TEST odoo.modules.loading: Loading module bus (7/25) 
+2025-10-28 16:05:35,864 52 DEBUG TEST odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2025-10-28 16:05:35,864 52 DEBUG TEST odoo.modules.loading: Loading module web_tour (8/25) 
+2025-10-28 16:05:35,867 52 DEBUG TEST odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-10-28 16:05:35,867 52 DEBUG TEST odoo.modules.loading: Loading module iap (9/25) 
+2025-10-28 16:05:35,872 52 DEBUG TEST odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-10-28 16:05:35,873 52 DEBUG TEST odoo.modules.loading: Loading module mail (10/25) 
+2025-10-28 16:05:35,991 52 DEBUG TEST odoo.modules.loading: Module mail loaded in 0.12s, 0 queries 
+2025-10-28 16:05:35,992 52 DEBUG TEST odoo.modules.loading: Loading module web_editor (11/25) 
+2025-10-28 16:05:36,013 52 DEBUG TEST odoo.modules.loading: Module web_editor loaded in 0.02s, 0 queries 
+2025-10-28 16:05:36,014 52 DEBUG TEST odoo.modules.loading: Loading module auth_signup (12/25) 
+2025-10-28 16:05:36,019 52 DEBUG TEST odoo.modules.loading: Module auth_signup loaded in 0.01s, 0 queries 
+2025-10-28 16:05:36,020 52 DEBUG TEST odoo.modules.loading: Loading module auth_totp_mail (13/25) 
+2025-10-28 16:05:36,022 52 DEBUG TEST odoo.modules.loading: Module auth_totp_mail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,022 52 DEBUG TEST odoo.modules.loading: Loading module base_install_request (14/25) 
+2025-10-28 16:05:36,026 52 DEBUG TEST odoo.modules.loading: Module base_install_request loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,026 52 DEBUG TEST odoo.modules.loading: Loading module contacts (15/25) 
+2025-10-28 16:05:36,029 52 DEBUG TEST odoo.modules.loading: Module contacts loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,029 52 DEBUG TEST odoo.modules.loading: Loading module google_gmail (16/25) 
+2025-10-28 16:05:36,034 52 DEBUG TEST odoo.modules.loading: Module google_gmail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,034 52 DEBUG TEST odoo.modules.loading: Loading module iap_mail (17/25) 
+2025-10-28 16:05:36,036 52 DEBUG TEST odoo.modules.loading: Module iap_mail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,036 52 DEBUG TEST odoo.modules.loading: Loading module mail_bot (18/25) 
+2025-10-28 16:05:36,040 52 DEBUG TEST odoo.modules.loading: Module mail_bot loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,040 52 DEBUG TEST odoo.modules.loading: Loading module phone_validation (19/25) 
+2025-10-28 16:05:36,077 52 DEBUG TEST odoo.modules.loading: Module phone_validation loaded in 0.04s, 0 queries 
+2025-10-28 16:05:36,078 52 DEBUG TEST odoo.modules.loading: Loading module privacy_lookup (20/25) 
+2025-10-28 16:05:36,083 52 DEBUG TEST odoo.modules.loading: Module privacy_lookup loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,083 52 DEBUG TEST odoo.modules.loading: Loading module web_unsplash (21/25) 
+2025-10-28 16:05:36,088 52 DEBUG TEST odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-10-28 16:05:36,088 52 INFO TEST odoo.modules.loading: Loading module gestion_estudiantes (22/25) 
+2025-10-28 16:05:36,103 52 DEBUG TEST odoo.models: Patching res.config.settings.report_footer with translate=True 
+2025-10-28 16:05:36,107 52 DEBUG TEST odoo.models: Patching base.document.layout.report_header with translate=True 
+2025-10-28 16:05:36,107 52 DEBUG TEST odoo.models: Patching base.document.layout.report_footer with translate=True 
+2025-10-28 16:05:36,108 52 DEBUG TEST odoo.models: Patching base.document.layout.company_details with translate=True 
+2025-10-28 16:05:36,175 52 DEBUG TEST odoo.models: Patching res.config.settings.report_footer with translate=True 
+2025-10-28 16:05:36,178 52 DEBUG TEST odoo.models: Patching base.document.layout.report_header with translate=True 
+2025-10-28 16:05:36,179 52 DEBUG TEST odoo.models: Patching base.document.layout.report_footer with translate=True 
+2025-10-28 16:05:36,179 52 DEBUG TEST odoo.models: Patching base.document.layout.company_details with translate=True 
+2025-10-28 16:05:36,193 52 INFO TEST odoo.modules.registry: module gestion_estudiantes: creating or updating database tables 
+2025-10-28 16:05:36,303 52 INFO TEST odoo.modules.loading: loading gestion_estudiantes/security/ir.model.access.csv 
+2025-10-28 16:05:36,326 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'See all possible values'"  
+2025-10-28 16:05:36,326 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'external id'"  
+2025-10-28 16:05:36,327 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for ""Unknown value '%s' for boolean field '%%(field)s'""  
+2025-10-28 16:05:36,327 52 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for ""Use '1' for yes and '0' for no""  
+2025-10-28 16:05:36,331 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from call_cache_clearing_methods /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py:2098 
+2025-10-28 16:05:36,334 52 INFO TEST odoo.modules.loading: loading gestion_estudiantes/views/estudiante_views.xml 
+2025-10-28 16:05:36,352 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,354 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,359 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,360 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,366 52 INFO TEST odoo.modules.loading: loading gestion_estudiantes/views/profesor_views.xml 
+2025-10-28 16:05:36,378 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,385 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,391 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,393 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,403 52 INFO TEST odoo.modules.loading: loading gestion_estudiantes/views/acciones.xml 
+2025-10-28 16:05:36,416 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:86 
+2025-10-28 16:05:36,419 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_actions.py:86 
+2025-10-28 16:05:36,420 52 INFO TEST odoo.modules.loading: loading gestion_estudiantes/views/menus.xml 
+2025-10-28 16:05:36,430 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_menu.py:173 
+2025-10-28 16:05:36,435 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_menu.py:173 
+2025-10-28 16:05:36,438 52 DEBUG TEST odoo.modules.registry: Invalidating default model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_menu.py:173 
+2025-10-28 16:05:36,482 52 INFO TEST odoo.modules.loading: Module gestion_estudiantes loaded in 0.39s, 182 queries (+182 other) 
+2025-10-28 16:05:36,483 52 DEBUG TEST odoo.modules.loading: Loading module partner_autocomplete (23/25) 
+2025-10-28 16:05:36,490 52 DEBUG TEST odoo.modules.loading: Module partner_autocomplete loaded in 0.01s, 0 queries 
+2025-10-28 16:05:36,490 52 DEBUG TEST odoo.modules.loading: Loading module sms (24/25) 
+2025-10-28 16:05:36,506 52 DEBUG TEST odoo.modules.loading: Module sms loaded in 0.02s, 0 queries 
+2025-10-28 16:05:36,507 52 DEBUG TEST odoo.modules.loading: Loading module snailmail (25/25) 
+2025-10-28 16:05:36,516 52 DEBUG TEST odoo.modules.loading: Module snailmail loaded in 0.01s, 0 queries 
+2025-10-28 16:05:36,516 52 INFO TEST odoo.modules.loading: 25 modules loaded in 0.72s, 182 queries (+182 extra) 
+2025-10-28 16:05:36,585 52 DEBUG TEST odoo.models: column index is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-10-28 16:05:36,585 52 DEBUG TEST odoo.models: column key is in the table auth_totp_device but not in the corresponding object auth_totp.device 
+2025-10-28 16:05:36,608 52 DEBUG TEST odoo.models: column web is in the table ir_module_module but not in the corresponding object ir.module.module 
+2025-10-28 16:05:36,633 52 DEBUG TEST odoo.models: column signup_token is in the table res_partner but not in the corresponding object res.partner 
+2025-10-28 16:05:36,635 52 DEBUG TEST odoo.models: column password is in the table res_users but not in the corresponding object res.users 
+2025-10-28 16:05:36,636 52 DEBUG TEST odoo.models: column totp_secret is in the table res_users but not in the corresponding object res.users 
+2025-10-28 16:05:36,636 52 DEBUG TEST odoo.models: column index is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-10-28 16:05:36,637 52 DEBUG TEST odoo.models: column key is in the table res_users_apikeys but not in the corresponding object res.users.apikeys 
+2025-10-28 16:05:36,662 52 DEBUG TEST odoo.addons.base.models.ir_cron: will execute 'Base: Auto-vacuum internal data' at 2025-10-28 16:06:36.647287 
+2025-10-28 16:05:36,662 52 INFO TEST odoo.modules.registry: verifying fields for every extended model 
+2025-10-28 16:05:36,704 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,706 52 DEBUG TEST odoo.modules.registry: Invalidating templates model caches from write /usr/lib/python3/dist-packages/odoo/addons/base/models/ir_ui_view.py:533 
+2025-10-28 16:05:36,889 52 INFO TEST odoo.modules.loading: Modules loaded. 
+2025-10-28 16:05:36,893 52 INFO TEST odoo.modules.registry: Registry loaded in 3.963s 
+2025-10-28 16:05:36,894 52 INFO TEST odoo.service.server: Initiating shutdown 
+2025-10-28 16:05:36,894 52 INFO TEST odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-10-28 16:05:36,895 52 DEBUG TEST odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x76355ffc4520>> 
+2025-10-28 16:05:36,895 52 DEBUG TEST odoo.service.server: on_close call <function _kick_all at 0x76355fa34af0> 
+2025-10-28 16:05:36,896 52 DEBUG TEST odoo.service.server: current thread: <_MainThread(MainThread, started 129971750375424)> 
+2025-10-28 16:05:36,896 52 DEBUG TEST odoo.service.server: process <_MainThread(MainThread, started 129971750375424)> (False) 
+2025-10-28 16:05:36,896 52 INFO TEST odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 1 connections  
+2025-10-28 16:05:36,897 52 DEBUG TEST odoo.service.server: -- 
+2025-10-28 16:05:42,152 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-10-28 16:05:42,152 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-10-28 16:05:42,520 1 DEBUG ? odoo.service.server: on_close call <bound method Event.set of <threading.Event object at 0x79b83ed2ca00>> 
+2025-10-28 16:05:42,523 1 DEBUG ? odoo.service.server: on_close call <function _kick_all at 0x79b83eebfc70> 
+2025-10-28 16:05:42,524 1 DEBUG ? odoo.service.server: current thread: <_MainThread(MainThread, started 133832471838720)> 
+2025-10-28 16:05:42,526 1 DEBUG ? odoo.service.server: process <_MainThread(MainThread, started 133832471838720)> (False) 
+2025-10-28 16:05:42,530 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 133832330270272)> (True) 
+2025-10-28 16:05:42,531 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 133832254682688)> (True) 
+2025-10-28 16:05:42,535 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.133832246289984, started 133832246289984)> (False) 
+2025-10-28 16:05:42,536 1 DEBUG ? odoo.service.server: join and sleep 
+2025-10-28 16:05:42,629 1 DEBUG ? odoo.service.server: process <Thread(odoo.service.http.request.133832225568320, stopped 133832225568320)> (False) 
+2025-10-28 16:05:42,630 1 DEBUG ? odoo.service.server: process <ImDispatch(odoo.addons.bus.models.bus.Bus, stopped daemon 133832206685760)> (True) 
+2025-10-28 16:05:42,631 1 DEBUG ? odoo.service.server: -- 
+2025-10-28 16:05:44,237 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.request:INFO" 
+2025-10-28 16:05:44,237 1 DEBUG ? odoo.netsvc: logger level set: "odoo.http.rpc.response:INFO" 
+2025-10-28 16:05:44,238 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 16:05:44,238 1 DEBUG ? odoo.netsvc: logger level set: "odoo:DEBUG" 
+2025-10-28 16:05:44,238 1 DEBUG ? odoo.netsvc: logger level set: "odoo.sql_db:INFO" 
+2025-10-28 16:05:44,239 1 DEBUG ? odoo.netsvc: logger level set: ":INFO" 
+2025-10-28 16:05:44,244 1 INFO ? odoo: Odoo version 17.0-20251008 
+2025-10-28 16:05:44,244 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-10-28 16:05:44,245 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/17.0', '/mnt/extra-addons'] 
+2025-10-28 16:05:44,245 1 INFO ? odoo: database: odoo@db:5432 
+2025-10-28 16:05:44,315 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-10-28 16:05:44,453 1 DEBUG ? odoo.service.server: Setting signal handlers 
+2025-10-28 16:05:44,455 1 DEBUG ? odoo.service.server: cron0 started! 
+2025-10-28 16:05:44,455 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 45bad5948ee2:8069 
+2025-10-28 16:05:44,455 1 DEBUG ? odoo.service.server: cron1 started! 
+2025-10-28 16:05:44,535 1 DEBUG ? odoo.http: HTTP sessions stored in: /var/lib/odoo/.local/share/Odoo/sessions 
+2025-10-28 16:05:44,581 1 DEBUG ? odoo.modules.registry: Multiprocess load registry signaling: [Registry: 2] [Cache default: 2] [Cache assets: 1] [Cache templates: 1] [Cache routing: 1] 
+2025-10-28 16:05:44,592 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-10-28 16:05:44,593 1 DEBUG ? odoo.modules.loading: Loading module base (1/1) 
+2025-10-28 16:05:44,599 1 DEBUG ? odoo.modules.loading: Module base loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,600 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-10-28 16:05:44,632 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'gestion_estudiantes', defaulting to LGPL-3 
+2025-10-28 16:05:44,661 1 DEBUG ? odoo.modules.loading: Updating graph with 24 more modules 
+2025-10-28 16:05:44,661 1 INFO ? odoo.modules.loading: loading 25 modules... 
+2025-10-28 16:05:44,662 1 DEBUG ? odoo.modules.loading: Loading module web (2/25) 
+2025-10-28 16:05:44,663 1 DEBUG ? odoo.modules.loading: Module web loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,664 1 DEBUG ? odoo.modules.loading: Loading module auth_totp (3/25) 
+2025-10-28 16:05:44,670 1 DEBUG ? odoo.modules.loading: Module auth_totp loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,670 1 DEBUG ? odoo.modules.loading: Loading module base_import (4/25) 
+2025-10-28 16:05:44,683 1 DEBUG ? odoo.modules.loading: Module base_import loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,684 1 DEBUG ? odoo.modules.loading: Loading module base_import_module (5/25) 
+2025-10-28 16:05:44,687 1 DEBUG ? odoo.modules.loading: Module base_import_module loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,688 1 DEBUG ? odoo.modules.loading: Loading module base_setup (6/25) 
+2025-10-28 16:05:44,690 1 DEBUG ? odoo.modules.loading: Module base_setup loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,691 1 DEBUG ? odoo.modules.loading: Loading module bus (7/25) 
+2025-10-28 16:05:44,699 1 DEBUG ? odoo.modules.loading: Module bus loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,700 1 DEBUG ? odoo.modules.loading: Loading module web_tour (8/25) 
+2025-10-28 16:05:44,701 1 DEBUG ? odoo.modules.loading: Module web_tour loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,701 1 DEBUG ? odoo.modules.loading: Loading module iap (9/25) 
+2025-10-28 16:05:44,704 1 DEBUG ? odoo.modules.loading: Module iap loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,704 1 DEBUG ? odoo.modules.loading: Loading module mail (10/25) 
+2025-10-28 16:05:44,754 1 DEBUG ? odoo.modules.loading: Module mail loaded in 0.05s, 0 queries 
+2025-10-28 16:05:44,755 1 DEBUG ? odoo.modules.loading: Loading module web_editor (11/25) 
+2025-10-28 16:05:44,766 1 DEBUG ? odoo.modules.loading: Module web_editor loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,767 1 DEBUG ? odoo.modules.loading: Loading module auth_signup (12/25) 
+2025-10-28 16:05:44,770 1 DEBUG ? odoo.modules.loading: Module auth_signup loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,771 1 DEBUG ? odoo.modules.loading: Loading module auth_totp_mail (13/25) 
+2025-10-28 16:05:44,772 1 DEBUG ? odoo.modules.loading: Module auth_totp_mail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,772 1 DEBUG ? odoo.modules.loading: Loading module base_install_request (14/25) 
+2025-10-28 16:05:44,774 1 DEBUG ? odoo.modules.loading: Module base_install_request loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,774 1 DEBUG ? odoo.modules.loading: Loading module contacts (15/25) 
+2025-10-28 16:05:44,775 1 DEBUG ? odoo.modules.loading: Module contacts loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,776 1 DEBUG ? odoo.modules.loading: Loading module google_gmail (16/25) 
+2025-10-28 16:05:44,778 1 DEBUG ? odoo.modules.loading: Module google_gmail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,779 1 DEBUG ? odoo.modules.loading: Loading module iap_mail (17/25) 
+2025-10-28 16:05:44,780 1 DEBUG ? odoo.modules.loading: Module iap_mail loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,781 1 DEBUG ? odoo.modules.loading: Loading module mail_bot (18/25) 
+2025-10-28 16:05:44,783 1 DEBUG ? odoo.modules.loading: Module mail_bot loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,783 1 DEBUG ? odoo.modules.loading: Loading module phone_validation (19/25) 
+2025-10-28 16:05:44,806 1 DEBUG ? odoo.modules.loading: Module phone_validation loaded in 0.02s, 0 queries 
+2025-10-28 16:05:44,807 1 DEBUG ? odoo.modules.loading: Loading module privacy_lookup (20/25) 
+2025-10-28 16:05:44,810 1 DEBUG ? odoo.modules.loading: Module privacy_lookup loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,810 1 DEBUG ? odoo.modules.loading: Loading module web_unsplash (21/25) 
+2025-10-28 16:05:44,813 1 DEBUG ? odoo.modules.loading: Module web_unsplash loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,814 1 DEBUG ? odoo.modules.loading: Loading module gestion_estudiantes (22/25) 
+2025-10-28 16:05:44,865 1 DEBUG ? odoo.modules.loading: Module gestion_estudiantes loaded in 0.05s, 0 queries 
+2025-10-28 16:05:44,866 1 DEBUG ? odoo.modules.loading: Loading module partner_autocomplete (23/25) 
+2025-10-28 16:05:44,869 1 DEBUG ? odoo.modules.loading: Module partner_autocomplete loaded in 0.00s, 0 queries 
+2025-10-28 16:05:44,869 1 DEBUG ? odoo.modules.loading: Loading module sms (24/25) 
+2025-10-28 16:05:44,878 1 DEBUG ? odoo.modules.loading: Module sms loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,878 1 DEBUG ? odoo.modules.loading: Loading module snailmail (25/25) 
+2025-10-28 16:05:44,884 1 DEBUG ? odoo.modules.loading: Module snailmail loaded in 0.01s, 0 queries 
+2025-10-28 16:05:44,884 1 INFO ? odoo.modules.loading: 25 modules loaded in 0.22s, 0 queries (+0 extra) 
+2025-10-28 16:05:44,936 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-10-28 16:05:44,942 1 INFO ? odoo.modules.registry: Registry loaded in 0.400s 
+2025-10-28 16:05:44,943 1 INFO TEST odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-10-28 16:05:45,062 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:45] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.058 0.474
+2025-10-28 16:05:45,437 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-10-28 16:05:47,675 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:47] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 2 0.001 0.025
+2025-10-28 16:05:49,500 1 WARNING TEST odoo.modules.module: Missing `license` key in manifest for 'gestion_estudiantes', defaulting to LGPL-3 
+2025-10-28 16:05:49,689 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:49] "GET /web HTTP/1.1" 200 - 64 0.061 0.575
+2025-10-28 16:05:49,828 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:49] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.006 0.043
+2025-10-28 16:05:49,875 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:49] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.022 0.028
+2025-10-28 16:05:49,931 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:49] "POST /mail/init_messaging HTTP/1.1" 200 - 56 0.075 0.072
+2025-10-28 16:05:49,958 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:49] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.006 0.013
+2025-10-28 16:05:50,676 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 16:05:50,677 1 DEBUG ? odoo.modules.module: module __pycache__: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 16:05:51,022 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 16:05:51,023 1 DEBUG ? odoo.modules.module: module __init__.py: no manifest file found ('__manifest__.py', '__openerp__.py') 
+2025-10-28 16:05:51,106 1 DEBUG TEST odoo.api: call res.users().systray_get_activities() 
+2025-10-28 16:05:51,124 1 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'document'"  
+2025-10-28 16:05:51,124 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.016 1.293
+2025-10-28 16:05:51,124 1 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'Create new %(document)s'"  
+2025-10-28 16:05:51,126 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "POST /web/action/load HTTP/1.1" 200 - 8 0.015 1.336
+2025-10-28 16:05:51,161 1 DEBUG TEST odoo.api: call res.partner().get_views(options={'action_id': 161, 'load_filters': True, 'toolbar': True}, views=[[False, 'list'], [False, 'form'], [False, 'search']]) 
+2025-10-28 16:05:51,228 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "POST /web/dataset/call_kw/res.partner/get_views HTTP/1.1" 200 - 51 0.030 0.047
+2025-10-28 16:05:51,251 1 DEBUG TEST odoo.api: call res.users().has_group('base.group_allow_export') 
+2025-10-28 16:05:51,253 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'name': {}, 'speciality': {}, 'date_started': {}, 'salary': {}}) 
+2025-10-28 16:05:51,255 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.008
+2025-10-28 16:05:51,259 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 4 0.003 0.012
+2025-10-28 16:05:51,596 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:05:51] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.014
+2025-10-28 16:06:44,541 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:06:44,558 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 1 acquired 
+2025-10-28 16:06:44,648 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Base: Auto-vacuum internal data', 34) 
+2025-10-28 16:06:44,650 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-10-28 16:06:44,678 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling wizard.ir.model.menu.create()._transient_vacuum() 
+2025-10-28 16:06:44,691 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling reset.view.arch.wizard()._transient_vacuum() 
+2025-10-28 16:06:44,711 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.attachment()._gc_file_store() 
+2025-10-28 16:06:45,578 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:06:45,597 1 DEBUG TEST odoo.addons.base.models.ir_cron: another worker is processing job 1, skip 
+2025-10-28 16:06:46,098 1 INFO TEST odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-10-28 16:06:46,102 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.cron.trigger()._gc_cron_triggers() 
+2025-10-28 16:06:46,138 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.http()._gc_sessions() 
+2025-10-28 16:06:46,285 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo()._transient_vacuum() 
+2025-10-28 16:06:46,293 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure()._transient_vacuum() 
+2025-10-28 16:06:46,300 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.demo_failure.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,308 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling ir.profile()._gc_profile() 
+2025-10-28 16:06:46,318 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.enable.profiling.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,337 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config()._transient_vacuum() 
+2025-10-28 16:06:46,345 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config.installer()._transient_vacuum() 
+2025-10-28 16:06:46,351 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.config.settings()._transient_vacuum() 
+2025-10-28 16:06:46,363 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.log()._gc_user_logs() 
+2025-10-28 16:06:46,370 1 INFO TEST odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-10-28 16:06:46,374 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.identitycheck()._transient_vacuum() 
+2025-10-28 16:06:46,381 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,388 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.user()._transient_vacuum() 
+2025-10-28 16:06:46,395 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling change.password.own()._transient_vacuum() 
+2025-10-28 16:06:46,403 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling res.users.apikeys.description()._transient_vacuum() 
+2025-10-28 16:06:46,414 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.update()._transient_vacuum() 
+2025-10-28 16:06:46,421 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.install()._transient_vacuum() 
+2025-10-28 16:06:46,428 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.import()._transient_vacuum() 
+2025-10-28 16:06:46,435 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.upgrade()._transient_vacuum() 
+2025-10-28 16:06:46,442 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.uninstall()._transient_vacuum() 
+2025-10-28 16:06:46,449 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.language.export()._transient_vacuum() 
+2025-10-28 16:06:46,456 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.line()._transient_vacuum() 
+2025-10-28 16:06:46,464 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.partner.merge.automatic.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,471 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.document.layout()._transient_vacuum() 
+2025-10-28 16:06:46,478 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling auth_totp.device()._gc_device() 
+2025-10-28 16:06:46,485 1 INFO TEST odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-10-28 16:06:46,488 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling auth_totp.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,495 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base_import.import()._transient_vacuum() 
+2025-10-28 16:06:46,502 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.import.module()._transient_vacuum() 
+2025-10-28 16:06:46,510 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling bus.bus()._gc_messages() 
+2025-10-28 16:06:46,549 1 INFO TEST odoo.models.unlink: User #1 deleted bus.bus records with IDs: [274, 275, 276, 277] 
+2025-10-28 16:06:46,559 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling bus.presence()._gc_bus_presence() 
+2025-10-28 16:06:46,570 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling iap.account.info()._transient_vacuum() 
+2025-10-28 16:06:46,593 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.activity()._gc_delete_old_overdue_activities() 
+2025-10-28 16:06:46,607 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.message.translation()._gc_translations() 
+2025-10-28 16:06:46,630 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling discuss.channel.rtc.session()._gc_inactive_sessions() 
+2025-10-28 16:06:46,643 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.blacklist.remove()._transient_vacuum() 
+2025-10-28 16:06:46,652 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.compose.message()._gc_lost_attachments() 
+2025-10-28 16:06:46,656 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.compose.message()._transient_vacuum() 
+2025-10-28 16:06:46,664 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.activity.schedule()._transient_vacuum() 
+2025-10-28 16:06:46,672 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.resend.message()._transient_vacuum() 
+2025-10-28 16:06:46,679 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.resend.partner()._transient_vacuum() 
+2025-10-28 16:06:46,687 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.template.preview()._transient_vacuum() 
+2025-10-28 16:06:46,694 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.template.reset()._transient_vacuum() 
+2025-10-28 16:06:46,701 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling mail.wizard.invite()._transient_vacuum() 
+2025-10-28 16:06:46,711 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.install.request()._transient_vacuum() 
+2025-10-28 16:06:46,719 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling base.module.install.review()._transient_vacuum() 
+2025-10-28 16:06:46,730 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling phone.blacklist.remove()._transient_vacuum() 
+2025-10-28 16:06:46,738 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling privacy.lookup.wizard()._transient_vacuum() 
+2025-10-28 16:06:46,745 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling privacy.lookup.wizard.line()._transient_vacuum() 
+2025-10-28 16:06:46,755 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.sms()._gc_device() 
+2025-10-28 16:06:46,764 1 INFO TEST odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-10-28 16:06:46,769 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.composer()._transient_vacuum() 
+2025-10-28 16:06:46,777 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.resend.recipient()._transient_vacuum() 
+2025-10-28 16:06:46,784 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.resend()._transient_vacuum() 
+2025-10-28 16:06:46,792 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.template.preview()._transient_vacuum() 
+2025-10-28 16:06:46,799 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling sms.template.reset()._transient_vacuum() 
+2025-10-28 16:06:46,807 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling snailmail.letter.format.error()._transient_vacuum() 
+2025-10-28 16:06:46,815 1 DEBUG TEST odoo.addons.base.models.ir_autovacuum: Calling snailmail.letter.missing.required.fields()._transient_vacuum() 
+2025-10-28 16:06:46,822 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (2.171s). 
+2025-10-28 16:06:46,823 1 DEBUG TEST odoo.addons.base.models.ir_cron: 2.171s (cron Base: Auto-vacuum internal data, server action 34 with uid 1) 
+2025-10-28 16:06:46,831 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 1 updated and released 
+2025-10-28 16:07:46,607 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:07:46,890 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:08:46,951 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:08:47,679 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:09:47,015 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:09:48,752 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:10:47,077 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:10:49,824 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:38:56,556 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:38:56] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.006 0.026
+2025-10-28 16:38:56,563 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:38:56] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.006 0.034
+2025-10-28 16:56:55,386 1 DEBUG TEST odoo.api: call res.partner(43,).web_read(specification={'same_vat_partner_id': {'fields': {'display_name': {}}, 'context': {'show_address': False, 'show_vat': False}}, 'partner_gid': {}, 'additional_info': {}, 'same_company_registry_partner_id': {'fields': {'display_name': {}}, 'context': {'show_address': False, 'show_vat': False}}, 'avatar_128': {}, 'image_1920': {}, 'write_date': {}, 'is_company': {}, 'commercial_partner_id': {'fields': {}}, 'active': {}, 'company_id': {'fields': {}}, 'country_code': {}, 'company_type': {}, 'name': {}, 'parent_id': {'fields': {'display_name': {}}, 'context': {'default_is_company': True, 'show_vat': True}}, 'company_name': {}, 'type': {}, 'street': {}, 'street2': {}, 'city': {}, 'state_id': {'fields': {'display_name': {}}}, 'zip': {}, 'country_id': {'fields': {'display_name': {}}}, 'vat': {}, 'function': {}, 'phone_blacklisted': {}, 'mobile_blacklisted': {}, 'phone': {}, 'mobile': {}, 'phone_sanitized': {}, 'user_ids': {}, 'is_blacklisted': {}, 'email': {}, 'is_teacher': {}, 'website': {}, 'title': {'fields': {'display_name': {}}}, 'active_lang_count': {}, 'lang': {}, 'category_id': {'fields': {'display_name': {}, 'color': {}}}, 'child_ids': {'fields': {'id': {}, 'color': {}, 'name': {}, 'title': {'fields': {'display_name': {}}}, 'type': {}, 'email': {}, 'parent_id': {'fields': {'display_name': {}}}, 'is_company': {}, 'function': {}, 'phone': {}, 'street': {}, 'street2': {}, 'zip': {}, 'city': {}, 'country_id': {'fields': {'display_name': {}}}, 'mobile': {}, 'state_id': {'fields': {'display_name': {}}}, 'image_128': {}, 'avatar_128': {}, 'lang': {}, 'comment': {}, 'display_name': {}, 'write_date': {}, 'company_id': {'fields': {}}, 'user_id': {'fields': {}}}, 'limit': 40, 'order': '', 'context': {'default_type': 'other'}}, 'user_id': {'fields': {'display_name': {}}}, 'company_registry': {}, 'ref': {}, 'industry_id': {'fields': {'display_name': {}}}, 'comment': {}, 'display_name': {}}) 
+2025-10-28 16:56:55,448 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:56:55] "POST /web/dataset/call_kw/res.partner/web_read HTTP/1.1" 200 - 12 0.054 0.048
+2025-10-28 16:56:55,569 1 DEBUG TEST odoo.tools.translate: no translation language detected, skipping translation for "'Partner Profile'"  
+2025-10-28 16:56:55,571 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:56:55] "POST /mail/thread/data HTTP/1.1" 200 - 25 0.034 0.026
+2025-10-28 16:56:55,633 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:56:55] "POST /mail/thread/messages HTTP/1.1" 200 - 21 0.061 0.043
+2025-10-28 16:57:01,365 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'name': {}, 'speciality': {}, 'date_started': {}, 'salary': {}}) 
+2025-10-28 16:57:01,369 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:57:01] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 4 0.001 0.014
+2025-10-28 16:57:02,376 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:57:02] "POST /web/action/load HTTP/1.1" 200 - 8 0.019 0.012
+2025-10-28 16:57:02,392 1 DEBUG TEST odoo.api: call gestion_estudiantes.estudiante().get_views(options={'action_id': 160, 'load_filters': True, 'toolbar': True}, views=[[False, 'list'], [False, 'form'], [False, 'search']]) 
+2025-10-28 16:57:02,424 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:57:02] "POST /web/dataset/call_kw/gestion_estudiantes.estudiante/get_views HTTP/1.1" 200 - 15 0.022 0.018
+2025-10-28 16:57:02,439 1 DEBUG TEST odoo.api: call gestion_estudiantes.estudiante().web_search_read(count_limit=10001, domain=[], limit=80, offset=0, order='', specification={'name': {}, 'age': {}, 'grade': {}, 'email': {}, 'phone': {}, 'enrollment_date': {}, 'active': {}}) 
+2025-10-28 16:57:02,443 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:57:02] "POST /web/dataset/call_kw/gestion_estudiantes.estudiante/web_search_read HTTP/1.1" 200 - 3 0.003 0.010
+2025-10-28 16:57:03,528 1 DEBUG TEST odoo.api: call res.partner().web_search_read(count_limit=10001, domain=[['is_teacher', '=', True]], limit=80, offset=0, order='', specification={'name': {}, 'speciality': {}, 'date_started': {}, 'salary': {}}) 
+2025-10-28 16:57:03,532 1 INFO TEST werkzeug: 172.18.0.1 - - [28/Oct/2025 16:57:03] "POST /web/dataset/call_kw/res.partner/web_search_read HTTP/1.1" 200 - 4 0.002 0.012
+2025-10-28 16:57:12,388 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:57:12,405 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 7 acquired 
+2025-10-28 16:57:12,452 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Notification: Send scheduled message notifications', 117) 
+2025-10-28 16:57:12,452 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-10-28 16:57:12,466 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.013s). 
+2025-10-28 16:57:12,467 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.013s (cron Notification: Send scheduled message notifications, server action 117 with uid 1) 
+2025-10-28 16:57:12,473 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 7 updated and released 
+2025-10-28 16:57:12,474 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 3 acquired 
+2025-10-28 16:57:12,479 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Mail: Email Queue Manager', 113) 
+2025-10-28 16:57:12,480 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-10-28 16:57:12,497 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.016s). 
+2025-10-28 16:57:12,497 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.016s (cron Mail: Email Queue Manager, server action 113 with uid 1) 
+2025-10-28 16:57:12,501 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 3 updated and released 
+2025-10-28 16:57:12,502 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 12 acquired 
+2025-10-28 16:57:12,507 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'SMS: SMS Queue Manager', 145) 
+2025-10-28 16:57:12,508 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-10-28 16:57:12,517 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.008s). 
+2025-10-28 16:57:12,518 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.008s (cron SMS: SMS Queue Manager, server action 145 with uid 1) 
+2025-10-28 16:57:12,521 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 12 updated and released 
+2025-10-28 16:57:12,522 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 11 acquired 
+2025-10-28 16:57:12,527 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Partner Autocomplete: Sync with remote DB', 144) 
+2025-10-28 16:57:12,528 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-10-28 16:57:12,531 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.003s). 
+2025-10-28 16:57:12,532 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.003s (cron Partner Autocomplete: Sync with remote DB, server action 144 with uid 1) 
+2025-10-28 16:57:12,535 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 11 updated and released 
+2025-10-28 16:57:12,537 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 13 acquired 
+2025-10-28 16:57:12,543 1 DEBUG TEST odoo.addons.base.models.ir_cron: cron.object.execute('TEST', 1, '*', 'Snailmail: process letters queue', 155) 
+2025-10-28 16:57:12,543 1 INFO TEST odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-10-28 16:57:12,552 1 INFO TEST odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.008s). 
+2025-10-28 16:57:12,553 1 DEBUG TEST odoo.addons.base.models.ir_cron: 0.008s (cron Snailmail: process letters queue, server action 155 with uid 1) 
+2025-10-28 16:57:12,556 1 DEBUG TEST odoo.addons.base.models.ir_cron: job 13 updated and released 
+2025-10-28 16:57:16,147 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:58:12,614 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:58:17,221 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2025-10-28 16:59:12,676 1 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2025-10-28 16:59:18,293 1 DEBUG ? odoo.service.server: cron1 polling for jobs 
