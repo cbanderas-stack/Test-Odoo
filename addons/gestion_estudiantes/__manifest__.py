@@ -1,6 +1,6 @@
 {
     'name': 'Gestión de Estudiantes',
-    'version': '1.0.0',##Version Odoo 17.0
+    'version': '1.0.0', ##Version Odoo 17.0
     'summary': 'Módulo para gestionar estudiantes en Odoo',
     'author': 'Cris',
     'category': 'Education',
@@ -8,7 +8,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/estudiante_views.xml',
-        #'views/profesor_views.xml',
+        'views/profesor_views.xml',
         'views/acciones.xml',
         'views/menus.xml',
     ],

@@ -6,10 +6,18 @@
               sequence="1"
               groups="base.group_user"/>
 
-    <!-- Submenú -->
+    <!-- Submenús -->
+    <!-- Estudiante -->
     <menuitem id="menu_estudiantes" 
               name="Estudiantes" 
               parent="menu_root_estudiantes" 
               action="action_estudiante" 
               sequence="1"/>
+    <!-- Profesor -->
+    <menuitem id="menu_profesores"
+                name="Profesores"
+                parent="menu_root_estudiantes"
+                action="action_profesor"
+                sequence="2"/>
+                
 </odoo>
