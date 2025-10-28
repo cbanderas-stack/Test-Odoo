@@ -1,20 +1,4 @@
 <odoo>
-    <!-- Hereda la vista base de contactos -->
-    <record id="view_partner_form_inherit_profesor" model="ir.ui.view">
-        <field name="name">res.partner.form.inherit.profesor</field>
-        <field name="model">res.partner</field>
-        <field name="inherit_id" ref="base.view_partner_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//field[@name='email']" position="after">
-                <field name="is_teacher"/>
-                <field name="speciality" modifiers="{'invisible': [('is_teacher','=',False)]}"/>
-                <field name="date_started" modifiers="{'invisible': [('is_teacher','=',False)]}"/>
-                <field name="salary" modifiers="{'invisible': [('is_teacher','=',False)]}"/>
-            </xpath>
-        </field>
-    </record>
-
-    <!-- Vista lista solo para profesores -->
     <record id="view_teacher_tree" model="ir.ui.view">
         <field name="name">res.partner.tree.teacher</field>
         <field name="model">res.partner</field>
@@ -27,4 +11,35 @@
             </tree>
         </field>
     </record>
+    
+    <record id="view_partner_form_inherit_profesor" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.profesor</field><!--Le pongo el nombre que yo quiera, ahora puse como referencia el "modelo.form(del que es el formulario).inherit(es heredable)"-->
+        <field name="model">res.partner</field><!--Nombre técnico del modelo real, este modelo debe apuntar al modelo que estoy usando, como este es herencia apunto al res.partner, en el caso de los estduiantes yo lo creé, entonces apunta al módulo que creé -->
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                <separator string="Datos de Profesor" modifiers="{'invisible': [('is_teacher', '=', False)]}"/>
+                <group modifiers="{'invisible': [('is_teacher', '=', False)]}">
+                    <field name="is_teacher"/>
+                    <!---<field name="speciality"/>
+                    <field name="date_started"/>
+                    <field name="salary"/>-->
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- 
+    <record id="view_teacher_tree" model="ir.ui.view">
+        <field name="name">res.partner.tree.teacher</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree string="Profesores">
+                <field name="name"/>
+                <field name="speciality"/>
+                <field name="date_started"/>
+                <field name="salary"/>
+            </tree>
+        </field>
+    </record>Vista lista solo para profesores -->
 </odoo>

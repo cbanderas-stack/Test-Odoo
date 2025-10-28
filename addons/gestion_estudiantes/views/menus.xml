@@ -2,7 +2,6 @@
     <!-- Menú Raíz -->
     <menuitem id="menu_root_estudiantes" 
               name="Gestión de Estudiantes"
-              action="action_estudiante" 
               sequence="1"
               groups="base.group_user"/>
 
