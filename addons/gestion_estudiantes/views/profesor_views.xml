@@ -20,14 +20,21 @@
         <field name="model">res.partner</field><!--Nombre técnico del modelo real, este modelo debe apuntar al modelo que estoy usando, como este es herencia apunto al res.partner, en el caso de los estduiantes yo lo creé, entonces apunta al módulo que creé -->
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='email']" position="after">
-                <separator string="Datos de Profesor" modifiers="{'invisible': [('is_teacher', '=', False)]}"/>
-                <group modifiers="{'invisible': [('is_teacher', '=', False)]}">
-                    <field name="is_teacher"/>
-                    <!---<field name="speciality"/>
-                    <field name="date_started"/>
-                    <field name="salary"/>-->
-                </group>
+            <xpath expr="//sheet" position="replace">
+                <sheet string="Profesor">
+                <separator string="Datos del Profesor"/>
+                    <group>
+                        <field name="is_teacher"/>
+                        <field name="name"/>
+                        <field name="email"/>
+                    </group>
+                    
+                    <group>
+                        <field name="speciality"/>
+                        <field name="date_started"/>
+                        <field name="salary"/>
+                    </group>
+                </sheet>
             </xpath>
         </field>
     </record>
