@@ -1,12 +1,12 @@
 <odoo>
-    <!-- Acción para estudiantes -->
+    <!-- Acción para Estudiantes -->
     <record id="action_estudiante" model="ir.actions.act_window">
         <field name="name">Estudiantes</field>
         <field name="res_model">gestion_estudiantes.estudiante</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Acción para profesores -->
+    <!-- Acción para Profesores -->
     <record id="action_profesor" model="ir.actions.act_window">
         <field name="name">Profesores</field>
         <field name="res_model">res.partner</field>
@@ -15,7 +15,19 @@
         <field name="views" eval="[
         (ref('gestion_estudiantes.view_teacher_tree'), 'tree'),
         (ref('gestion_estudiantes.view_partner_form_inherit_profesor'), 'form')]"/>
+    </record>
 
+     <!-- Acción para Asignaturas -->
+    <record id="action_asignatura" model="ir.actions.act_window">
+        <field name="name">Asignaturas</field>
+        <field name="res_model">gestion_estudiantes.asignatura</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <!-- Acción para Evaluaciones -->
+    <record id="action_evaluacion" model="ir.actions.act_window">
+        <field name="name">Evaluaciones</field>
+        <field name="res_model">gestion_estudiantes.evaluacion</field>
+        <field name="view_mode">tree,form</field>
     </record>
 </odoo>
-

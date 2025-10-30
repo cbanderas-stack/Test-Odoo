@@ -1,0 +1,35 @@
+<odoo>
+<!--Asignatura form-->
+    <record id="view_asignatura_form" model="ir.ui.view">
+        <field name="name">gestion.estudiantes.asignatura.form</field>
+        <field name="model">gestion_estudiantes.asignatura</field>
+        <field name="arch" type="xml">
+            <form string="Asignatura">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                    </group>
+
+                    <group>
+                    <field name="student_ids" widget="many2many_tags"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+<!--Listado-->
+<record id="view_asignatura_tree" model="ir.ui.view">
+    <field name="name">gestion.estudiantes.asignatura.tree</field>
+    <field name="model">gestion_estudiantes.asignatura</field>
+    <field name="arch" type="xml">
+        <tree string="Asignaturas">
+            <field name="name"/>
+            <field name="code"/>
+            <field name="student_ids"/>
+        </tree>
+    </field>
+</record>
+
+</odoo>

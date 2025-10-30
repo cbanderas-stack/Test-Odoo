@@ -39,17 +39,4 @@
         </field>
     </record>
 
-    <!-- 
-    <record id="view_teacher_tree" model="ir.ui.view">
-        <field name="name">res.partner.tree.teacher</field>
-        <field name="model">res.partner</field>
-        <field name="arch" type="xml">
-            <tree string="Profesores">
-                <field name="name"/>
-                <field name="speciality"/>
-                <field name="date_started"/>
-                <field name="salary"/>
-            </tree>
-        </field>
-    </record>Vista lista solo para profesores -->
 </odoo>

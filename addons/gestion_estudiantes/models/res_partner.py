@@ -7,4 +7,4 @@ class ResPartner(models.Model):
     speciality = fields.Char(string='Especialidad')
     date_started = fields.Date(string='Fecha de inicio')
     salary = fields.Float(string='Salario')
-
+    studen_ids = fields.One2many('gestion_estudiantes.estudiante', 'teacher_id', string='Estudiantes')

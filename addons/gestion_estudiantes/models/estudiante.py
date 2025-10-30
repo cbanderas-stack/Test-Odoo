@@ -18,7 +18,7 @@ class Estudiante(models.Model):
     ], string='Grado')
     address = fields.Char(string='Dirección')
     phone = fields.Char(string='Teléfono')
+    teacher_id = fields.Many2one('res.partner', string='Profesor', domain=[('is_teacher', '=', True)])
+    subject_ids = fields.Many2many('gestion_estudiantes.asignatura', relation='asignatura_estudiante_rel', string='Asignaturas')
+    evaluation_ids = fields.One2many('gestion_estudiantes.evaluacion', 'student_id', string='Evaluaciones')
 
-# id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-# access_estudiante_user,access.estudiante.user,model_gestion_estudiantes_estudiante,base.group_user,1,1,1,1
-# Hola

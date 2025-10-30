@@ -18,5 +18,19 @@
                 parent="menu_root_estudiantes"
                 action="action_profesor"
                 sequence="2"/>
+
+    <!-- Asignatura -->
+    <menuitem id="menu_asignaturas"
+                name="Asignaturas"
+                parent="menu_root_estudiantes"
+                action="action_asignatura"
+                sequence="3"/>
+                
+    <!-- Evaluación -->
+    <menuitem id="menu_evaluaciones"   
+                name="Evaluaciones"
+                parent="menu_root_estudiantes"
+                action="action_evaluacion"
+                sequence="4"/>
                 
 </odoo>
