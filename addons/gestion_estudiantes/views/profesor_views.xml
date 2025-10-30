@@ -34,6 +34,17 @@
                         <field name="date_started"/>
                         <field name="salary"/>
                     </group>
+
+                    <group string="Estudiantes Asignados">
+                        <field name="studen_ids">
+                            <tree string="Estudiantes">
+                                <field name="name"/>
+                                <field name="grade"/>
+                                <field name="email"/>
+                            </tree>
+                        </field>
+                    </group>
+
                 </sheet>
             </xpath>
         </field>

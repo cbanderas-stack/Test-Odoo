@@ -9,7 +9,7 @@
         'security/ir.model.access.csv',
         'Views/asignatura_views.xml',
         'views/estudiante_views.xml',
-        #'views/evaluacion_views.xml',
+        'views/evaluacion_views.xml',
         'views/profesor_views.xml',
         'views/acciones.xml',
         'views/menus.xml',
