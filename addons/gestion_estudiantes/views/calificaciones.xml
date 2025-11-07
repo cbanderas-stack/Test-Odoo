@@ -1,0 +1,35 @@
+<odoo>
+    <!-- Formulario de Evaluaciones -->
+    <record id="view_calificacion_form" model="ir.ui.view">
+        <field name="name">gestion.estudiantes.calificacion.form</field>
+        <field name="model">gestion_estudiantes.calificacion</field>
+        <field name="arch" type="xml">
+            <form string="calificacion">
+                <sheet>
+                    <group>
+                        <field name="student_id"/>
+                        <field name="score"/>
+                        <field name="date"/>
+                        <field name="comments"/>
+                        <field name="evaluation_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Listado (Tree) -->
+    <record id="view_calificacion_tree" model="ir.ui.view">
+        <field name="name">gestion.estudiantes.calificacion.tree</field>
+        <field name="model">gestion_estudiantes.calificacion</field>
+        <field name="arch" type="xml">
+            <tree string="Calificaciones">
+                <field name="student_id"/>
+                <field name="score"/>
+                <field name="date"/>
+                <field name="comments"/>
+                <field name="evaluation_id"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

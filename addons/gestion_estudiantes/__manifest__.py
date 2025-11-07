@@ -12,6 +12,7 @@
         'views/evaluacion_views.xml',
         'views/profesor_views.xml',
         'views/acciones.xml',
+        'views/calificaciones.xml',
         'views/menus.xml',
     ],
     'installable': True,

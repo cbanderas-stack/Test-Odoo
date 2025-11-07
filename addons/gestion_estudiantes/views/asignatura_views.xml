@@ -5,16 +5,51 @@
         <field name="model">gestion_estudiantes.asignatura</field>
         <field name="arch" type="xml">
             <form string="Asignatura">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+     
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="code"/>
+                        <field name="name" readonly = "state != 'por_registrar'"/>
+                        <field name="code" readonly = "state != 'por_registrar'"/>
+                        <field name="course_start" readonly= "state !='por_registratar'"/>
+                        <field name="course_end" readonly= "state !='por_registrar'"/>
                     </group>
 
                     <group>
-                    <field name="student_ids" widget="many2many_tags"/>
+                    <field name="student_ids" widget="many2many_tags" readonly="state != 'por_registrar'"/>
                     </group>
 
+                    <group>
+                        <field name="teacher_id" readonly="state != 'por_registrar'"/>
+                        <field name="teacher_email" string="Correo del profesor" readonly="1"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Evaluaciones">
+                            <field name="evaluations_ids">
+                                <tree string="Evaluaciones de la asignatura">
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                    <field name="comments"/>
+                                    <field name="subject_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    
+                        <page string="Estudiantes">
+                            <field name="student_ids">
+                                <tree string="Estudiantes de la asignatura">
+                                    <field name="name"/>
+                                    <field name="age"/>
+                                    <field name="email"/>
+                                    <field name="grade"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    
                 </sheet>
             </form>
         </field>

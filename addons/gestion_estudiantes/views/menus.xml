@@ -32,5 +32,14 @@
                 parent="menu_root_estudiantes"
                 action="action_evaluacion"
                 sequence="4"/>
+
+    <!-- Calificación -->
+    <menuitem id="menu_calificaciones"   
+                name="Calificaciones"
+                parent="menu_root_estudiantes"
+                action="action_calificacion"
+                
+                
+                sequence="5"/>
                 
 </odoo>

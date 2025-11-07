@@ -9,3 +9,5 @@ class evaluacion(models.Model):
     date = fields.Date(string='Fecha de evaluación', required=True)
     calification = fields.Float(string='Nota', required=True)
     comments = fields.Text(string='comentarios')
+    subject_id = fields.Many2one('gestion_estudiantes.asignatura', string= 'Asignatura', required=True, ondelete='cascade')
+    calification_ids = fields.One2many('gestion_estudiantes.calificacion', 'evaluation_id', string = 'Calificaciones asociadas')

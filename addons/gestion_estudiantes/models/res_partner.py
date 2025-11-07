@@ -8,3 +8,4 @@ class ResPartner(models.Model):
     date_started = fields.Date(string='Fecha de inicio')
     salary = fields.Float(string='Salario')
     studen_ids = fields.One2many('gestion_estudiantes.estudiante', 'teacher_id', string='Estudiantes')
+    subject_ids = fields.One2many('gestion_estudiantes.asignatura', 'teacher_id', string='Asignaturas impartidas')
